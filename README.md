@@ -80,4 +80,4 @@ Ative o ambiente virtual:
 - pyenv versions        # lista todas as versões instaladas
 - pyenv global <versão> # define a versão global do Python
 - pyenv local <versão>  # define a versão apenas para o diretório atual
- -pyenv which python    # mostra o caminho do Python em uso
+- pyenv which python    # mostra o caminho do Python em uso
