@@ -12,23 +12,6 @@ Este guia mostra como instalar o **pyenv-win** no Windows usando **pipx**, confi
 
 ---
 
-## Instalar o pipx
-
-No PowerShell, execute:
-
-```powershell
-python -m pip install --user pipx
-python -m pipx ensurepath
-```
-
---- 
-
-Verifique a instalação
-```powershell
-pipx --version
-```
----
-
 ## Instalar Pyenv
 
 O Pyenv é uma ferramenta que ajuda a instalar e gerenciar múltiplas versões do Python no mesmo sistema.
@@ -36,9 +19,9 @@ O Pyenv é uma ferramenta que ajuda a instalar e gerenciar múltiplas versões d
 No PowerShell, execute:
 
 ```powershell
-pipx install pyenv-win
+git clone https://github.com/pyenv-win/pyenv-win.git "%USERPROFILE%\.pyenv"
 ```
-
+Adicionar à variável de ambiente PATH os diretórios pyenv-win\bin e pyenv-win\shims.
 ---
 Confirme que o pyenv foi instalado corretamente:
 
@@ -47,6 +30,7 @@ pyenv --version
 pyenv install --list
 ```
 ---
+
 
 ## Instalar e configurar uma versão do Python
 Exemplo: instalar o Python 3.11.5 e defini-lo como padrão global:
