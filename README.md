@@ -53,6 +53,11 @@ Navegue até a pasta do seu projeto e crie o ambiente virtual:
 ```powershell
 python -m venv venv
 ```
+
+Atualize o python
+```powershell
+python -m pip install --upgrade pip setuptools wheel
+```
 ---
 
 Ative o ambiente virtual:
